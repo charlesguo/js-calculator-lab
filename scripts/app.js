@@ -97,7 +97,7 @@ mortgageOperation.addEventListener("click", function() {
 
 
   // operation
-  mortgageAnswer = mortgageLoan*mortgageAPR*Math.pow((1+mortgageAPR), mortgageTerm)/(Math.pow((1+mortgageAPR), mortgageTerm) - 1);
+  mortgageAnswer = mortgageLoan*(mortgageAPR/100)*Math.pow((1+mortgageAPR/100), mortgageTerm)/(Math.pow((1+mortgageAPR/100), mortgageTerm) - 1);
 
   console.log(mortgageAnswer);
 
